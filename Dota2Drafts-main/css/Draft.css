@@ -1,0 +1,583 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/draftback.jpeg);
+  background-size: cover;
+  display: block;
+  position: fixed;
+}
+
+:root{
+  --select: white;
+  --imgofher1:none;
+  --imgofher2:none;
+  --imgofher3:none;
+  --imgofher4:none;
+  --imgofher5:none;
+  --foropacity: 0;
+  --border: 2px solid white;
+}
+.abbadon{
+  z-index: 101;
+  position: absolute;
+  width: 4em;
+  top: 1.7em;
+  left: 0.2em;
+}
+.btnforpopup1{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top:3em;
+  background-image: var(--imgofher1);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: var(--border)
+}
+.btnforpopup2{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 12em;
+  background-image: var(--imgofher2);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: var(--border)
+}
+.btnforpopup3{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 21em;
+  background-image: var(--imgofher3);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: var(--border)
+}
+.btnforpopup4{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 30em;
+  background-image: var(--imgofher4);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: var(--border)
+}
+.btnforpopup5{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 39em;
+  background-image: var(--imgofher5);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: var(--border)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 1 ПОПАП */
+.popup1{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup1:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup1:target .popup1__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup1__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup1__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup1__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup1__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup1__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup1__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup1__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 2 ПОПАП */
+.popup2{
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup2:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup2:target .popup2__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup2__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup2__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup2__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup2__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup2__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup2__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup2__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 3 ПОПАП */
+    .popup3{
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup3:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup3:target .popup3__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup3__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup3__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup3__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup3__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup3__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup3__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup3__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 4 ПОПАП */
+.popup4{
+  position: fixed;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup4:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup4:target .popup4__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup4__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup4__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup4__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup4__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup4__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup4__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup4__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5 ПОПАП */
+.popup5{
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup5:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup5:target .popup5__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup5__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup5__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup5__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup5__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup5__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup5__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup5__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+.button1{
+  width: 5em;
+  position: absolute;
+  left: 1em;
+}
+.button2{
+  width: 5em;
+  position: absolute;
+  left: 1em;
+}
+.button3{
+  width: 5em;
+  position: absolute;
+  left: 1em;
+}
+.button4{
+  width: 5em;
+  position: absolute;
+  left: 1em;
+}
+.button5{
+  width: 5em;
+  position: absolute;
+  left: 1em;
+}
+.closeher{
+  position: absolute;
+  font-size: 20px;
+  left: 50em;
+}
+.btnforpopup1:hover{
+
+}
+/* .krestic{
+  z-index: 20;
+  width: 5em;
+  position: absolute;
+  left: 75em;
+  top:5em
+
+} */
